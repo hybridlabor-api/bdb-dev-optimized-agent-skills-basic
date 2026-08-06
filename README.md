@@ -78,64 +78,35 @@ BDBrainstorm combines multi-agent brainstorming, the `/grill-me` slash command, 
 
 ---
 
-## 🔌 22 Custom Local MCP Integrations
+## 🔌 Core Development MCP Integrations
 
 ![BDB Architecture Sketch](bdb_architecture_sketch.jpg)
 
-Rather than relying on skeletal python mocks or broken remote APIs, this repository bundles **22 custom, local MCP wrappers** (in the `mcps/` directory). These are built/warmed automatically and allow your AI assistant to read, write, and execute commands within the industry's leading creative software.
+Rather than relying on experimental remote APIs, this repository focuses on providing a stable, locally-executed foundation for standard software engineering and autonomous agent workflows. The **Basic Edition** bundles only the most essential integrations (in the `mcps/` directory) to keep your environment lean and reliable.
 
 <details>
-<summary><strong>🎨 Adobe Creative Cloud (Illustrator, Photoshop, After Effects, Premiere Pro)</strong></summary>
+<summary><strong>🖥️ OS Control & Automation (Dual-Engine)</strong></summary>
 
-We provide a dual-engine architecture optimized for macOS and Windows environments:
-- **Direct OS-Native Bridge (`bdb_adobe_mcp`)**: Runs zero-install scripting.
-  - **macOS:** Targets application bundle IDs directly via AppleScript `do javascript` / `DoScript` command streams.
-  - **Windows:** Automatically queries and instantiates local COM objects via PowerShell wrapper scripts and executes transient `.jsx` ExtendScript code.
-- **Cross-Platform UXP WebSocket Bridge (`bdb_adobe_uxp_mcp`)**: A three-tier WebSocket proxy (Node.js server on port 8080 + native UXP developer plugins) for deep DOM manipulation and persistent WebSocket sessions inside Photoshop and Premiere Pro, running identically on Windows and macOS.
-</details>
-
-<details>
-<summary><strong>🎬 DaVinci Resolve (Triple Coverage)</strong></summary>
-
-- **Primary: `bdb_davinci_mcp`**: Works on both the **Free and Studio** versions using a workspace script menu loop. Exposes 162 tools (Timeline, clips, markers, grades, Fusion) and includes local CPU-based AI models (Meta Demucs v4 for voice isolation, faster-whisper for auto-subtitles, and rembg for background removal).
-- **Studio: `bdb_davinci_mcp_studio`**: The official Node.js server (wrapping samuelgursky) for advanced direct timeline and project management in Resolve Studio.
-- **Fallback: `bdb_davinci_mcp_fallback`**: Hoyt-harness professional python server for Studio scripting.
-</details>
-
-<details>
-<summary><strong>📐 Rhino 3D & Grasshopper (Twin-Engine)</strong></summary>
-
-- **Primary: `bdb_rhino_mcp`**: McNeel's official connector (managed via Yak router) for native reading/writing of Rhino geometric layouts.
-- **Fallback: `bdb_rhino_mcp_fallback`**: The GOLEM 3D server with 105 tools to dynamically manipulate Rhino 8 assets, execute scripts, and solve Grasshopper definitions.
-</details>
-
-<details>
-<summary><strong>🏗️ Additional Specialized Integrations (Unreal, TouchDesigner, Vectorworks, etc.)</strong></summary>
-
-### 🏗️ Vectorworks
-- **Primary: `bdb_vectorworks_mcp`**: Semantic RAG-based search index over VectorScript and Vectorworks API documentation (port 8765) for automated CAD drafting.
-
-### 🎮 Unreal Engine
-- **Primary: `bdb_unreal_mcp`**: Connects via the Unreal Engine 5 Web Remote Control API (port 30010) and the `gimmeDG` toolset. Allows the agent to query, spawn actors, edit materials, write Blueprints, and automate level/sequencer manipulation.
-
-### 🧊 Blender (Twin-Engine)
-- **Primary: `bdb_blender_mcp`**: BlenderMCP socket integration for scene layout, mesh generation, and viewport controls.
-- **Fallback: `bdb_blender_mcp_fallback`**: djeada's python server for managing Blender TCP connections and raw python scripting.
-
-### 🎛️ TouchDesigner (Twin-Engine)
-- **Primary: `bdb_touchdesigner_mcp`**: MindDesigner-Bridge (`tdmcp`) on port 9980 to read and write networks via custom `.tox` structures.
-- **Fallback: `bdb_touchdesigner_mcp_fallback`**: fallback TCP-based node query and inspector.
-
-### 💡 grandMA3 & Resolume
-- **grandMA3**: `bdb_ma3_mcp` sends OSC/UDP command streams directly to your grandMA3 console (port 8000) to automate cues, macros, and patch fixtures.
-- **Resolume**: `bdb_resolume_mcp` wraps Arena's REST API (port 8080) to sequence layers, query statuses, and trigger clips.
-
-### 🖥️ OS Control (Dual-Engine)
-- **macOS/Linux: `zavora_computer_use`**: Bundled with precompiled native Rust NAPI binary objects (macOS arm64/x64, Linux) to control mouse, keyboard, windows, and apps without runtime compile errors.
+- **macOS/Linux: `zavora_computer_use`**: Bundled with precompiled native Rust NAPI binary objects (macOS arm64/x64, Linux) to control mouse, keyboard, windows, and apps seamlessly without runtime compile errors.
 - **Windows: `bdb_windows_computer_use`**: Native python-based Win32 / COM / UIAutomation controller with local OCR (Tesseract) support for advanced Windows GUI automation.
+</details>
 
-### 🧠 Local Semantic Brain (memB)
-- **`memb_mcp`**: Exposes standard long-term memory tools (`add_memory`, `search_memory`, `delete_memory`, `list_memories`) using a completely local, offline-first vector engine (powered by a bundled 30MB ONNX model and SQLite).
+<details>
+<summary><strong>🌐 Web & Browser Automation</strong></summary>
+
+- **Chrome DevTools / Puppeteer**: Direct integration to allow the agent to navigate, inspect, and interact with web pages, test web applications, and scrape data dynamically.
+</details>
+
+<details>
+<summary><strong>🐙 Version Control & Collaboration</strong></summary>
+
+- **GitHub MCP**: Full access to the GitHub API via the official CLI to autonomously create PRs, review code, manage issues, and trigger CI/CD pipelines right from your editor.
+</details>
+
+<details>
+<summary><strong>🧠 Local Semantic Brain (memB)</strong></summary>
+
+- **`memb_mcp`**: Exposes standard long-term memory tools (`add_memory`, `search_memory`, `delete_memory`, `list_memories`) using a completely local, offline-first vector engine (powered by a bundled 30MB ONNX model and SQLite). This gives your coding agents persistent memory across sessions.
 </details>
 
 ---
