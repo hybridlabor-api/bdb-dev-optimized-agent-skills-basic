@@ -1,0 +1,47 @@
+{
+  "name": "@hybridlabor-api/bdb-dev-optimized-agent-skills-basic",
+  "version": "2.3.0",
+  "description": "Optimized Agent skills and MCP pack for BDB DEV (Basic Edition without Media/Show Tools)",
+  "main": "installer.js",
+  "bin": {
+    "bdb-dev-optimized-agent-skills-basic": "installer.js",
+    "bdb-agent-skills-pro-basic": "installer.js",
+    "bdb-agent-skills-basic": "installer.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hybridlabor-api/bdb-dev-optimized-agent-skills-basic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hybridlabor-api/bdb-dev-optimized-agent-skills-basic/issues"
+  },
+  "homepage": "https://github.com/hybridlabor-api/bdb-dev-optimized-agent-skills-basic#readme",
+  "files": [
+    "installer.js",
+    "mcp_config.json",
+    "GEMINI.md",
+    "CODEX.md",
+    ".codex-plugin/",
+    "Project-overview.html",
+    "assets/",
+    "skills/",
+    "mcps/",
+    "vendor/"
+  ],
+  "keywords": [
+    "codex-plugin",
+    "codex-cli",
+    "chatgpt-codex",
+    "antigravity-skill",
+    "claude-code-plugin",
+    "cursor-rules",
+    "windsurf-rules",
+    "aider-skills",
+    "mcp-server"
+  ],
+  "author": "BDB DEV",
+  "license": "Apache-2.0"
+}
