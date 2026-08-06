@@ -23,14 +23,11 @@
 [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![skills](https://img.shields.io/badge/skills-144%20curated-brightgreen.svg)](https://github.com/hybridlabor-api/bdb-dev-optimized-agent-skills-basic)
 
-> **Supercharging AI coding agents with 144 hyper-curated skills, 22 local MCPs, and deep integrations for the creative technology industry.**
+> **Supercharging AI coding agents with hyper-curated skills, core MCPs, and deep integrations for modern software engineering.**
 
-Welcome to the **BDB DEV Skills & MCP Configuration** repository. This project serves as the backbone of our creative and full-stack development ecosystem, supercharging AI agents with highly specialized capabilities tailored for the event and creative technology industry, as well as general-purpose software engineering.
+Welcome to the **BDB DEV Skills & MCP Configuration** repository. This project serves as the backbone of our full-stack development ecosystem, supercharging AI agents with highly specialized capabilities tailored for general-purpose software engineering.
 
 While optimized for **Google Antigravity**, this skills pack and MCP configuration is **100% universal** and works seamlessly with all modern AI agents and developer interfaces, including **ChatGPT Codex / Codex CLI, Claude Desktop, Claude Code, Cursor, Aider, Roo Code, Cline, and Windsurf**.
-
-> 🎙 **Audio Deep Dive: "Give AI Agents Control of Creative Software"**  
-> <video src="assets/Give_AI_Agents_Control_of_Creative_Software.mp4" controls></video>
 
 ---
 
@@ -40,8 +37,8 @@ We started with a massive pool of over 1,400 raw AI skills. After rigorous testi
 
 These skills are precision-engineered to ensure agents waste no time on redundant tasks and instead operate with maximum agency and context awareness.
 
-### 💻 Beyond Events: Normal Software & App Coding
-While heavily optimized for the creative tech industry, these skills are deeply rooted in core software engineering:
+### 💻 Core Software & App Coding
+These skills are deeply rooted in core software engineering best practices:
 - **Full-Stack Development**: Spinning up Next.js App Router boilerplates, building scalable Node.js microservices, and crafting interactive frontends.
 - **App Development**: Architecting databases, designing REST APIs, and building standard web and mobile applications from scratch.
 - **Design & Quality Assurance**: Auditing UI/UX patterns (utilizing `ui-ux-pro-max`), enforcing clean code principles, and setting up strict CI/CD pipelines.
@@ -51,17 +48,17 @@ While heavily optimized for the creative tech industry, these skills are deeply 
 ## 🔄 BDB Software Engineering Pipeline & Slash Commands
 
 ```text
- IDEATE & MEDIA STORM     DEFINE & SCAFFOLD      PLAN & SPEC      BUILD & MCPs       VERIFY        SHIP
- ┌──────────────────┐    ┌─────────────────┐    ┌───────────┐    ┌────────────┐   ┌──────────┐   ┌──────────┐
- │ Grill Me & Media │ ──▶│  Folder Select  │ ──▶│ Spec &    │ ──▶│ Subagents  │──▶│ QA Gate  │──▶│ OpenWiki │
- │   Brainstorming  │    │ OpenWiki & Repo │    │   Plan    │    │ & MCP Dev  │   │ Review   │   │  & Push  │
- └──────────────────┘    └─────────────────┘    └───────────┘    └────────────┘   └──────────┘   └──────────┘
-/grill-me /bdbmediastorm  /openwiki /github-repo    /plan          /subagents       /review        /ship
+      IDEATE            DEFINE & SCAFFOLD      PLAN & SPEC      BUILD & MCPs       VERIFY        SHIP
+ ┌──────────────┐      ┌─────────────────┐    ┌───────────┐    ┌────────────┐   ┌──────────┐   ┌──────────┐
+ │   Grill Me   │ ───▶ │  Folder Select  │ ──▶│ Spec &    │ ──▶│ Subagents  │──▶│ QA Gate  │──▶│ OpenWiki │
+ │ Brainstorming│      │ OpenWiki & Repo │    │   Plan    │    │ & MCP Dev  │   │ Review   │   │  & Push  │
+ └──────────────┘      └─────────────────┘    └───────────┘    └────────────┘   └──────────┘   └──────────┘
+    /grill-me               /openwiki             /plan          /subagents       /review        /ship
 ```
 
-AI agents follow this structured lifecycle, deeply integrated with the **BDBrainstorm** and **BDBMediaStorm** philosophy:
+AI agents follow this structured lifecycle, deeply integrated with the **BDBrainstorm** philosophy:
 
-- **1. IDEATE & MEDIA STORM (`/grill-me`, `/bdbrainstorm`, `/bdbmediastorm`)**: Actively challenge ideas or conduct multi-agent media/event-tech brainstorming. Spawns specialized subagents (CI/Design Expert, Real Time Architect, MCP Implementer) to validate hardware, 3D scenography (Rhino, Blender, Unreal), protocols (OSC, Art-Net), and MCP compatibility.
+- **1. IDEATE (`/grill-me`, `/bdbrainstorm`)**: Actively challenge ideas or conduct multi-agent architecture brainstorming. Spawns specialized subagents to validate system architecture, database design, and framework compatibility.
 - **2. DEFINE & SCAFFOLD (`openwiki-skill`, `github-repo`)**: Confirm target workspace directory with the user, then autonomously initialize project documentation, `agent.md`, `.openwiki/` structures, and GitHub repo standards.
 - **3. PLAN (`/plan`)**: Create technical design specs, PRD, and file-by-file implementation plans, strictly adhering to `ui-ux-pro-max` standards.
 - **4. BUILD (`/subagents`)**: Subagent-driven development. The master orchestrator delegates specific component creation, node patching, and refactoring tasks to independent subagents.
@@ -111,24 +108,15 @@ Rather than relying on experimental remote APIs, this repository focuses on prov
 
 ---
 
-## 📖 11 Specialized System Skills
+## 📖 Core System Skills
 
-To make these MCP integrations accessible to AI agents, we provide **11 dedicated system skills** inside the `skills/global_config/` directory. If an AI agent imports this pack, it will immediately read these markdown files to learn the tool signatures, expected arguments, ExtendScript hooks, and common troubleshooting steps for each application.
+To make our core MCP integrations accessible to AI agents, we provide **dedicated system skills** inside the `skills/global_config/` directory. If an AI agent imports this pack, it will immediately read these markdown files to learn the tool signatures, expected arguments, hooks, and common troubleshooting steps for each integration.
 
 <details>
 <summary><strong>View System Skills List</strong></summary>
 
-- [`bdb-unreal-mcp.md`](skills/global_config/bdb-unreal-mcp.md)
-- [`bdb-rhino-mcp.md`](skills/global_config/bdb-rhino-mcp.md)
-- [`bdb-davinci-mcp.md`](skills/global_config/bdb-davinci-mcp.md)
-- [`bdb-blender-mcp.md`](skills/global_config/bdb-blender-mcp.md)
-- [`bdb-after-effects-mcp.md`](skills/global_config/bdb-after-effects-mcp.md)
-- [`bdb-vectorworks-mcp.md`](skills/global_config/bdb-vectorworks-mcp.md)
-- [`bdb-touchdesigner-mcp.md`](skills/global_config/bdb-touchdesigner-mcp.md)
 - [`bdb-computer-use-mcp.md`](skills/global_config/bdb-computer-use-mcp.md)
-- [`bdb-grandma3-mcp.md`](skills/global_config/bdb-grandma3-mcp.md)
-- [`bdb-resolume-mcp.md`](skills/global_config/bdb-resolume-mcp.md)
-- [`bdb-adobe-suite-mcp.md`](skills/global_config/bdb-adobe-suite-mcp.md)
+- [`bdb-github-mcp.md`](skills/global_config/bdb-github-mcp.md)
 - [`bdb-memb-mcp.md`](skills/global_config/bdb-memb-mcp.md)
 - [`openwiki-skill`](skills/global_config/openwiki-skill/SKILL.md): Direct Gemini-native integration of OpenWiki for autonomous, high-agency documentation management and release notes maintenance.
 - [`memb-skill`](skills/global_config/memb-skill/SKILL.md): BDB local-first long-term memory engine (memB). Query, remember, and adapt preferences, code architectures, and developer patterns across tasks.
