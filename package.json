@@ -1,6 +1,6 @@
 {
   "name": "@hybridlabor-api/bdb-dev-optimized-agent-skills-basic",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Optimized Agent skills and MCP pack for BDB DEV (Basic Edition without Media/Show Tools)",
   "main": "installer.js",
   "bin": {
